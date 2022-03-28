@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 export default function SavedList(props) {
   const history = useHistory();
 
-  const goHome = () => {
+  const routeToHome = () => {
     history.push("/");
   }
   return (
@@ -13,7 +13,7 @@ export default function SavedList(props) {
       {props.list.map(movie => (
         <span className="saved-movie">{movie.title}</span>
       ))}
-      <div className="home-button" onClick={goHome}>Home</div>
+      <div className="home-button" onClick={routeToHome}>Home</div>
     </div>
   );
 }

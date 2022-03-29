@@ -7,6 +7,8 @@ export default function SavedList(props) {
   const routeToHome = () => {
     history.push("/");
   }
+
+  
   return (
     <div className="saved-list">
       <h3>Saved Movies:</h3>
